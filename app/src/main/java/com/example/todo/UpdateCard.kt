@@ -24,7 +24,7 @@ class UpdateCard : AppCompatActivity() {
             val priority = DataObject.getData(pos).priority
             create_title.setText(title)
             create_priority.setText(priority)
-
+//
             delete_button.setOnClickListener {
                 DataObject.deleteData(pos)
                 GlobalScope.launch {
