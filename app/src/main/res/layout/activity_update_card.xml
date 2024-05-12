@@ -14,10 +14,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Update Task"
-        android:textColor="@color/white"
+        android:textColor="@color/teal_200"
         android:textSize="36sp"
         android:gravity="center"
-        android:fontFamily="sans-serif"/>
+        android:fontFamily="sans-serif"
+        />
 
     <EditText
         android:id="@+id/create_title"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/custom_edittetext"
-        android:hint="Priority(High/Medium/Law)"
+        android:hint="Preference(High/Medium/Law)"
         android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="#BFBBBB" />
@@ -51,7 +52,10 @@
             android:id="@+id/update_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update"/>
+            android:backgroundTint="@color/teal_200"
+            android:text="Update"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
 
         <View
         android:layout_width="0dp"
@@ -63,7 +67,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF5722"
-            android:text="Delete"/>
+            android:text="Delete"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
     </LinearLayout>
 
 </LinearLayout>

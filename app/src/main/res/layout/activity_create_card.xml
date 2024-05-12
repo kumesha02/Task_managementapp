@@ -2,50 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".CreateCard">
+    android:background="@color/black">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Your Task"
-        android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="36sp"
+        android:textColor="@color/teal_200"
         android:gravity="center"
         android:fontFamily="sans-serif"/>
+
     <EditText
         android:id="@+id/create_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name/Number of the task"
         android:layout_marginTop="30dp"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:hint="Name/Number of the task"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
-        />
+        android:background="@drawable/custom_edittetext" />
 
     <EditText
         android:id="@+id/create_priority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Priority(High/Medium/Low)"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:hint="Preference(first/second/third)"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
-        />
+        android:background="@drawable/custom_edittetext" />
 
     <Button
         android:id="@+id/save_button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="61dp"
         android:layout_marginTop="30dp"
-        android:text="Save Task"/>
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="Save Task"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
 
 </LinearLayout>
