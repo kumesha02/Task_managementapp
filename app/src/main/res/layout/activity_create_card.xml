@@ -9,16 +9,28 @@
     android:padding="20dp"
     android:background="@color/black">
 
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/task4"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Title -->
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Your Task"
         android:textStyle="bold"
         android:textSize="36sp"
         android:textColor="@color/teal_200"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:fontFamily="sans-serif"/>
 
+    <!-- Task Name -->
     <EditText
         android:id="@+id/create_title"
         android:layout_width="match_parent"
@@ -30,26 +42,29 @@
         android:textColor="@color/white"
         android:background="@drawable/custom_edittetext" />
 
+    <!-- Task Priority -->
     <EditText
         android:id="@+id/create_priority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="15dp"
-        android:hint="Preference(first/second/third)"
+        android:hint="Preference (first/second/third)"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         android:background="@drawable/custom_edittetext" />
 
+    <!-- Save Button -->
     <Button
         android:id="@+id/save_button"
-        android:layout_width="221dp"
-        android:layout_height="61dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:padding="16dp"
         android:backgroundTint="@color/cardview_light_background"
         android:text="Save Task"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="17dp"/>
+        android:textSize="17sp"/>
 
 </LinearLayout>

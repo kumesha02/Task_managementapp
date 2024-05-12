@@ -10,6 +10,12 @@
     android:padding="20dp"
     tools:context=".UpdateCard">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/task3" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
